@@ -3,15 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: #331343;
+    background-color: #000;
     height: 100vh;
 }
 .interface{
     max-width: 1800px;
     margin: 0 auto;
 }
+.interface img { max-width: 200px; }
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 40px 4%;
@@ -21,3 +23,36 @@ header > .interface{
     align-items: center;
     justify-content: space-between;
 }
+/* opções de navegação */
+header a{
+    text-decoration: none;
+    color: rgb(136, 135, 135);
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+color: #fff;
+transform: scale(1.05);
+}
+ header nav ul{
+    list-style-type: none;
+ }
+ header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+ }
+ /* button de contato */
+ header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color:#5f055f;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+ }
+ header .btn-contato button:hover{
+box-shadow: 0px 0px 8px #680368fd;
+
+
+ }
